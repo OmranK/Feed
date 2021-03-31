@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71055BB261487D000EEEF10 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71055BA261487D000EEEF10 /* FeedItemsMapper.swift */; };
 		B71F207A26141AFD003B469D /* Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71F207026141AFC003B469D /* Feed.framework */; };
 		B71F208F26141B19003B469D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F208E26141B19003B469D /* FeedItem.swift */; };
 		B73FD06126141CDD00E19970 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FD06026141CDD00E19970 /* FeedLoader.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B71055BA261487D000EEEF10 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		B71F207026141AFC003B469D /* Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71F207426141AFC003B469D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71F207926141AFD003B469D /* FeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			children = (
 				B73FD06B26141E7500E19970 /* RemoteFeedLoader.swift */,
 				B73FD06F2614227E00E19970 /* HTTPClient.swift */,
+				B71055BA261487D000EEEF10 /* FeedItemsMapper.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71055BB261487D000EEEF10 /* FeedItemsMapper.swift in Sources */,
 				B73FD06126141CDD00E19970 /* FeedLoader.swift in Sources */,
 				B73FD06C26141E7500E19970 /* RemoteFeedLoader.swift in Sources */,
 				B73FD0702614227E00E19970 /* HTTPClient.swift in Sources */,
