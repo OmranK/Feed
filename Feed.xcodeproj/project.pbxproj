@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B71F207A26141AFD003B469D /* Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71F207026141AFC003B469D /* Feed.framework */; };
-		B71F207F26141AFD003B469D /* FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F207E26141AFD003B469D /* FeedTests.swift */; };
-		B71F208126141AFD003B469D /* Feed.h in Headers */ = {isa = PBXBuildFile; fileRef = B71F207326141AFC003B469D /* Feed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B71F208F26141B19003B469D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F208E26141B19003B469D /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +23,10 @@
 
 /* Begin PBXFileReference section */
 		B71F207026141AFC003B469D /* Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B71F207326141AFC003B469D /* Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		B71F207426141AFC003B469D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71F207926141AFD003B469D /* FeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B71F207E26141AFD003B469D /* FeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTests.swift; sourceTree = "<group>"; };
 		B71F208026141AFD003B469D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B71F208E26141B19003B469D /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +69,8 @@
 		B71F207226141AFC003B469D /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				B71F207326141AFC003B469D /* Feed.h */,
 				B71F207426141AFC003B469D /* Info.plist */,
+				B71F208E26141B19003B469D /* FeedItem.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -80,7 +78,6 @@
 		B71F207D26141AFD003B469D /* FeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				B71F207E26141AFD003B469D /* FeedTests.swift */,
 				B71F208026141AFD003B469D /* Info.plist */,
 			);
 			path = FeedTests;
@@ -93,7 +90,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71F208126141AFD003B469D /* Feed.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +143,7 @@
 				TargetAttributes = {
 					B71F206F26141AFC003B469D = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					B71F207826141AFD003B469D = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71F208F26141B19003B469D /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71F207F26141AFD003B469D /* FeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +337,7 @@
 		B71F208526141AFD003B469D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AcronDesigns.Feed;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +363,7 @@
 		B71F208626141AFD003B469D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +388,7 @@
 		B71F208826141AFD003B469D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5752TAHCMC;
@@ -406,6 +407,7 @@
 		B71F208926141AFD003B469D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5752TAHCMC;
