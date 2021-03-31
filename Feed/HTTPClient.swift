@@ -7,10 +7,8 @@
 
 import Foundation
 
-class HTTPClient {
-    static var shared = HTTPClient()
-    
-    func get(from url: URL) { }
+protocol HTTPClient {
+    func get(from url: URL)
 }
 
 
