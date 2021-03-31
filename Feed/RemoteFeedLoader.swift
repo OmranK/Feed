@@ -7,6 +7,14 @@
 
 import Foundation
 
+class HTTPClient {
+    private init() {}
+    static let shared = HTTPClient()
+    var requestedURL: URL?
+}
+
 class RemoteFeedLoader {
-    
+    func load() {
+        HTTPClient.shared.requestedURL = URL(string: "https://a-url.com")
+    }
 }
