@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B71F207A26141AFD003B469D /* Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71F207026141AFC003B469D /* Feed.framework */; };
 		B71F208F26141B19003B469D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F208E26141B19003B469D /* FeedItem.swift */; };
+		B73FD06126141CDD00E19970 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FD06026141CDD00E19970 /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		B71F207926141AFD003B469D /* FeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71F208026141AFD003B469D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71F208E26141B19003B469D /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		B73FD06026141CDD00E19970 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				B71F207426141AFC003B469D /* Info.plist */,
 				B71F208E26141B19003B469D /* FeedItem.swift */,
+				B73FD06026141CDD00E19970 /* FeedLoader.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73FD06126141CDD00E19970 /* FeedLoader.swift in Sources */,
 				B71F208F26141B19003B469D /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
