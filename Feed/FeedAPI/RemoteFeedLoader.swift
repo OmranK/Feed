@@ -9,8 +9,8 @@ import Foundation
 
 public final class RemoteFeedLoader {
     
-    private let client: HTTPClient
     private let url: URL
+    private let client: HTTPClient
     
     public init(url: URL, client: HTTPClient) {
         self.client = client
