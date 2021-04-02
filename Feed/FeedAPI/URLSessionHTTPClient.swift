@@ -14,8 +14,12 @@ public final class URLSessionHTTPClient {
         self.session = session
     }
     
-    public func get(from url: URL) {
-        session.dataTask(with: url) { _, _, _ in }.resume()
+    public func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
+        session.dataTask(with: url) { _, _, error in
+            if let error = error {
+                completion(.failure(error))
+            }
+        }.resume()
     }
     
 }
