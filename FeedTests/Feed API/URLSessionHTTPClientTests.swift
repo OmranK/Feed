@@ -14,7 +14,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         URLProtocolStub.startInterceptingRequest()
         let url = URL(string: "http://any-url.com")!
         let error = NSError(domain: "any error", code: 1)
-        URLProtocolStub.stub(url: url, data = nil, response = nil, error: error)
+        URLProtocolStub.stub(url: url, data: nil, response: nil, error: error)
         let sut = URLSessionHTTPClient()
         
         let exp = expectation(description: "Wait for completion")
