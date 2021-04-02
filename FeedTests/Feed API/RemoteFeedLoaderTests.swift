@@ -134,6 +134,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     private func expect(_ sut: RemoteFeedLoader, toCompleteWithResult expectedResult: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
+        let exp = expectation(description: "Wait for completion.")
         sut.load { receivedResult in
             switch (receivedResult, expectedResult) {
             case let (.success(recevedItems), .success(expectedItems)):
@@ -143,8 +144,10 @@ class RemoteFeedLoaderTests: XCTestCase {
             default:
                 XCTFail("Expected result \(expectedResult) got \(receivedResult) instead", file: file, line: line)
             }
+            exp.fulfill()
         }
         action()
+        wait(for: [exp], timeout: 4)
     }
 
     private class HTTPClientSpy: HTTPClient {
@@ -156,7 +159,8 @@ class RemoteFeedLoaderTests: XCTestCase {
         }
 
         func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
-            messages.append((url,completion))
+            messages.append((url, completion))
+//            completion(messages[url])
         }
 
         func complete(with error: Error, at index: Int = 0) {
