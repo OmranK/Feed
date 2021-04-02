@@ -7,10 +7,17 @@
 
 import Foundation
 
+public protocol HTTPSession {
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> HTTPSessionTask
+}
+public protocol HTTPSessionTask {
+    func resume()
+}
+
 public final class URLSessionHTTPClient {
-    private let session: URLSession
+    private let session: HTTPSession
     
-    public init (session: URLSession) {
+    public init (session: HTTPSession) {
         self.session = session
     }
     
