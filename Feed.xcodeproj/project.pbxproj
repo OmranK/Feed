@@ -16,6 +16,7 @@
 		B73FD0702614227E00E19970 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73FD06F2614227E00E19970 /* HTTPClient.swift */; };
 		B7C5D8202616DC11002A8B93 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C5D81F2616DC11002A8B93 /* URLSessionHTTPClientTests.swift */; };
 		B7C5D8262616DEF0002A8B93 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C5D8252616DEF0002A8B93 /* URLSessionHTTPClient.swift */; };
+		B7C5D8322617D090002A8B93 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C5D8312617D090002A8B93 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		B73FD06F2614227E00E19970 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		B7C5D81F2616DC11002A8B93 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		B7C5D8252616DEF0002A8B93 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		B7C5D8312617D090002A8B93 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				B73FD06726141E3900E19970 /* RemoteFeedLoaderTests.swift */,
 				B7C5D81F2616DC11002A8B93 /* URLSessionHTTPClientTests.swift */,
+				B7C5D8312617D090002A8B93 /* test.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73FD06826141E3900E19970 /* RemoteFeedLoaderTests.swift in Sources */,
+				B7C5D8322617D090002A8B93 /* test.swift in Sources */,
 				B7C5D8202616DC11002A8B93 /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
