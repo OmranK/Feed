@@ -138,7 +138,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         return URLResponse(url: anyURL(), mimeType: nil, expectedContentLength: 0, textEncodingName: nil)
     }
     private func anyHTTPURLResponse() -> HTTPURLResponse {
-        return HTTPURLResponse(url: anyURL(), mimeType: nil, expectedContentLength: 0, textEncodingName: nil)
+        return HTTPURLResponse(url: anyURL(), statusCode: 200, httpVersion: nil, headerFields: nil)!
     }
     
     // MARK: - Stubs
@@ -173,7 +173,6 @@ class URLSessionHTTPClientTests: XCTestCase {
         // URLProtocol methods we need to implement to subclass it
 
         override class func canInit(with request: URLRequest) -> Bool {
-            requestObserver?(request)
             return true
         }
 
